@@ -8,11 +8,34 @@
   background-color: white;
 }
 
-
  body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+/*  */
+
+/* Button styling */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Instructions Styling */
+.instructions {
+  background-color: bisque;
+  padding: 20pc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.instructions ul {
+  text-align: left;
+  margin: 20px 0;
+}
+.instructions li {
+  margin: 10px 0;
 }
