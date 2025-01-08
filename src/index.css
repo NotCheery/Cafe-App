@@ -16,26 +16,80 @@
   min-height: 100vh;
 }
 
-/*  */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh;
+  padding: 20px; */
+}
+
 
 /* Button styling */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
+}
 button {
-  margin: 10px;
-  padding: 10px 20px;
+  padding: 15px 30px;
+  font-size: 1.2 rem;
   cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #efdcbc;
+  color: rgb(124, 62, 7);
+}
+button:hover {
+  background-color: #edcb91;
 }
 
 /* Instructions Styling */
 .instructions {
-  background-color: bisque;
-  padding: 20pc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   max-width: 600px;
   margin: 0 auto;
 }
 .instructions ul {
   text-align: left;
   margin: 20px 0;
+  padding: 0 20px;
 }
 .instructions li {
   margin: 10px 0;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 1.2 rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    max-width: 250px;
+  }
 }

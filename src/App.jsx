@@ -34,14 +34,15 @@ const App = () => {
 
   // Main menu component
   const MainMenu = () => (
-    <div>
+    <div className= "menu-container">
       <h1>Cafe</h1>
       <h2>Welcome! Click on Instructions to get to know how to play, or click on Start to play!</h2>
-      <button onClick={handleInstructions}>Instructions</button>
-      <button onClick={handleStart}>Start</button>
+      <div className="button-container">
+        <button onClick={handleInstructions}>Instructions</button>
+        <button onClick={handleStart}>Start</button>
+      </div>
     </div>
-  )
-
+  );
 
   return (
     <div className="App">
