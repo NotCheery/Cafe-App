@@ -1,36 +1,28 @@
 import {useState} from 'react';
 import './index.css';
+import Instructions from './components/Instructions'; 
+import Game_Screen from './components/Game_Screen';
 
 const App = () => {
 
-  // Show instructions
   const [showInstructions, setShowInstructions] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false); //track if game is active
 
   const handleInstructions = () => {
-    setShowInstructions(true);
-  };
+    setShowInstructions(true); //show instructions 
+  }; 
 
   const handleBack = () => {
-    setShowInstructions(false);
-  };
+    setShowInstructions(false); //go back to menu
+  }; 
 
   const handleStart = () => {
-    console.log("Start clicked");
-  };
+    setIsPlaying(true); //start playing
+  }; 
 
-  // Instructions component
-  const Instructions = () => (
-    <div className="instructions">
-      <h2>Instructions</h2>
-      <ul>
-        <li>You will receive an order</li>
-        <li>Prepare drinks accurately</li>
-        <li>Complete as many orders as you can</li>
-        <li>Earn points to meet the quota for the day!</li>
-      </ul>
-      <button onClick={handleBack}>Back</button>
-    </div>
-  );
+  const handleGameOver = () => {
+    setIsPlaying(false); //return to menu
+  };
 
   // Main menu component
   const MainMenu = () => (
@@ -46,7 +38,13 @@ const App = () => {
 
   return (
     <div className="App">
-      {showInstructions ? <Instructions/> : <MainMenu />}
+      {isPlaying ? (
+        <Game_Screen handleGameOver={handleGameOver} />
+      ) : showInstructions ? (
+        <Instructions handleBack={handleBack} />
+      ) : (
+        <MainMenu />
+      )}
     </div>
   );
 }
