@@ -12,7 +12,7 @@
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 300px;
   min-height: 100vh;
 }
 
@@ -86,6 +86,15 @@ button:hover {
 }
 .Order li {
   margin: 10px 0;
+}
+.order-buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
 }
 
 h1 {
