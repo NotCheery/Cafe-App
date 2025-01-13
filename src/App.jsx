@@ -3,6 +3,7 @@ import './index.css';
 import Instructions from './components/Instructions'; 
 import Game_Screen from './components/Game_Screen';
 
+
 const App = () => {
 
   const [showInstructions, setShowInstructions] = useState(false);
@@ -23,6 +24,7 @@ const App = () => {
   const handleGameOver = () => {
     setIsPlaying(false); //return to menu
   };
+
 
   // Main menu component
   const MainMenu = () => (

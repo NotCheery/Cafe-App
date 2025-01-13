@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import MakeOrder from "./make_order";
 
 const Game_Screen = ({handleGameOver}) => {
+
+    const [showMakeOrder, setShowMakeOrder] = useState(false);
+
+    const handleMakeOrder = () => {
+        setShowMakeOrder(true);
+    };
+
+    const handleBack = () => {
+        setShowMakeOrder(false);
+    };
+    if (showMakeOrder) {
+        return <MakeOrder onBack={handleBack} />;
+    }
+
     return (
         <div className="game-screen">
             <h1>Game Screen</h1>
@@ -20,12 +35,10 @@ const Game_Screen = ({handleGameOver}) => {
                     <li>Milk</li>
                 </ul>
                 <div className="button-container">
-                    <button>Make Order</button>
+                    <button onClick={handleMakeOrder}>Make Order</button>
                     <button>Submit Order</button>
                 </div>
-                
             </div>
-           
             <button onClick={handleGameOver}>Game Over</button>
         </div>
     );
