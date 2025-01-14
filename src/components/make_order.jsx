@@ -14,7 +14,7 @@ const MakeOrder = ({onBack}) => {
                 <button>candycane</button>
                 <button>Frosting</button>
             </div>
-            <button onClick={onBack}>Back</button>
+            <button onClick={onBack} className="back-make-order-button">Back</button>
         </div>
 
     );
