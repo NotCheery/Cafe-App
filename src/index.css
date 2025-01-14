@@ -3,9 +3,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  color: black;
-  background-color: white;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  color: var(--star-color);
+  background-color: var(--space-dark);
+  position: relative;
+  overflow: hidden;
 }
 
  body {
@@ -14,22 +16,46 @@
   place-items: center;
   min-width: 300px;
   min-height: 100vh;
+  background: linear-gradient(to bottom, var(--space-dark), var(--space-purple));
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px);
+  background-size: 100px 100px;
+  animation: twinkle 4s infinite;
+}
+@keyframes twinkle {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.3; }
 }
 
 .App {
   text-align: center;
   min-height: 100vh;
   padding: 20px;
+  backdrop-filter: blur(1px);
 }
+
+
 .menu-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* min-height: 100vh;
-  padding: 20px; */
+  background: rgba(43, 27, 71, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 0 20px var(--nebula-pink);
+  padding: 2rem;
 }
-
 
 /* Button styling */
 .button-container {
@@ -44,12 +70,16 @@ button {
   font-size: 1.2 rem;
   cursor: pointer;
   border-radius: 8px;
-  border: none;
-  background-color: #efdcbc;
-  color: rgb(124, 62, 7);
+  border: 2px solid car(--cosmic-blue);
+  background: rgba(79, 139, 255, 0.1);
+  color: var(--star-color);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px var(--cosmic-blue);
 }
 button:hover {
-  background-color: #edcb91;
+  background: rgba(79, 139, 255, 0.3);
+  box-shadow: 0 0 15px var(--cosmic-blue);
+  transform: translateY(-2px)
 }
 
 /* Instructions Styling */
@@ -100,11 +130,15 @@ button:hover {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: var(--star-color);
+  text-shadow: 0 0 10px var(--nebula-pink);
 }
 h2 {
   font-size: 1.2 rem;
   margin-bottom: 30px;
   max-width: 600px;
+  color: var(--star-color);
+  opacity: 0.9;
 }
 
 /* Responsive adjustments */
@@ -120,4 +154,34 @@ h2 {
   .button-container {
     max-width: 250px;
   }
+
+  .menu-container {
+    padding: 1rem;
+  }
+}
+
+/* Updated to fit space theme */
+/* Instructions and Order sections */
+.instructions, .Order {
+  background: rgba(27, 39, 53, 0.7);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.instructions ul, .Order ul {
+  color: var(--star-color);
+  opacity: 0.9;
+}
+.instructions li, .Order li {
+  margin: 10px 0;
+  list-style-type: none;
+  position: relative;
+  padding-left: 20px;
+}
+.instructions li::before, .Order li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: var(--nebula-pink);
 }
