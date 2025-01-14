@@ -13,6 +13,11 @@
   place-items: center;
   min-width: 300px;
   min-height: 100vh;
+  background-image: url('cafe_space.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .App {
