@@ -200,9 +200,32 @@ h2 {
   margin: 5px 0;
 }
 
+/* Score display and order completion styling */
+/* .score-display {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(43, 27, 71, 0.7);
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px var(--cosmic-blue);
+}
 
+.completed-order {
+  background: rgba(0, 255, 0, 0.2) !important;
+  cursor: not-allowed !important;
+}
 
+.completed-badge {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-top: 10px;
+  text-shadow: 0 0 8px #4CAF50;
+}
 
-
-
-
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+ */

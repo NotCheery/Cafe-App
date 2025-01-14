@@ -2,7 +2,7 @@
 
 Cafe App Game
 
-Tech Stack: React, AWS, (Maybe Node.js), MySQL
+Tech Stack: React, AWS Cognito
 
 Open Source and Free to Use: https://www.mysql.com/products/community/ 
 
