@@ -81,9 +81,6 @@ const Game_Screen = ({ handleGameOver }) => {
             <button onClick={handleGameOver} className="game-over-button">Game Over</button>
         </div>
     );
-};
-
-                         
-
+};        
 
 export default Game_Screen;
