@@ -190,6 +190,17 @@ h2 {
   }
 }
 
+/* Css for required ingredients */
+.required {
+  border: 2px solid gold;
+}
+
+.required-ingredients li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+
 
 
 

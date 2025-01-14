@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const MakeOrder = ({ onBack, updateOrder }) => {
+const MakeOrder = ({ onBack, updateOrder, requiredIngredients, currentIngredients }) => {
     const fridgeIngredients = ["Milk", "Ice", "Frosting"];
     const pantryIngredients = ["Sugar", "Hot Water", "Coffee Powder", "Sprinkles", "Candycane"];
 
@@ -20,6 +20,11 @@ const MakeOrder = ({ onBack, updateOrder }) => {
         }
     };
 
+    const isIngredientRequired = (ingredient) => {
+        return requiredIngredients.includes(ingredient);
+    }
+
+    // Amazon q asked this to be deleted
     const handleDragOver = (event) => {
         event.preventDefault();
     };
@@ -27,6 +32,18 @@ const MakeOrder = ({ onBack, updateOrder }) => {
     return (
         <div className="make-order">
             <h2>Make Order</h2>
+            <div className="required-ingredients">
+                <h3>Required Ingredients</h3>
+                <ul>
+                    {requiredIngredients.map((ingredient, index) => (
+                        <li key={index} style={{ 
+                            textDecoration: currentIngredients.includes(ingredient) ? 'line-through' : 'none' 
+                        }}>
+                            {ingredient}
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
             <div style={{ display: "flex", gap: "20px" }}>
                 <div>
@@ -52,6 +69,7 @@ const MakeOrder = ({ onBack, updateOrder }) => {
                                 key={ingredient}
                                 draggable
                                 onDragStart={(event) => handleDragStart(event, ingredient)}
+                                className={isIngredientRequired(ingredient) ? "required" : ""}
                             >
                                 {ingredient}
                             </button>
