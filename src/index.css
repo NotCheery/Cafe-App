@@ -1,13 +1,12 @@
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   font-family: 'Space Grotesk', 'Inter', sans-serif;
-  color: var(--star-color);
-  background-color: var(--space-dark);
-  position: relative;
-  overflow: hidden;
+  color: aliceblue;
 }
 
  body {
@@ -16,33 +15,13 @@
   place-items: center;
   min-width: 300px;
   min-height: 100vh;
-  background: linear-gradient(to bottom, var(--space-dark), var(--space-purple));
-  position: relative;
 }
 
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px);
-  background-size: 100px 100px;
-  animation: twinkle 4s infinite;
-}
-@keyframes twinkle {
-  0% { opacity: 0.3; }
-  50% { opacity: 0.8; }
-  100% { opacity: 0.3; }
-}
 
 .App {
   text-align: center;
   min-height: 100vh;
   padding: 20px;
-  backdrop-filter: blur(1px);
 }
 
 
@@ -125,20 +104,26 @@ button:hover {
   gap: 20px;
   width: 100%;
   max-width: 300px;
+  color: rgb(42, 62, 55);
+}
+.back-make-order-button {
+  color: black;
+}
+.game-over-button {
+  color: black;
 }
 
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: var(--star-color);
-  text-shadow: 0 0 10px var(--nebula-pink);
+  color: aliceblue;
 }
 h2 {
   font-size: 1.2 rem;
   margin-bottom: 30px;
   max-width: 600px;
-  color: var(--star-color);
-  opacity: 0.9;
+  color: aliceblue;
+  
 }
 
 /* Responsive adjustments */

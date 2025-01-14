@@ -83,8 +83,7 @@ const MakeOrder = ({ onBack, updateOrder }) => {
                     </ul>
                 )}
             </div>
-
-            <button onClick={onBack} style={{ marginTop: "20px" }}>Continue</button>
+            <button onClick={onBack}>Back</button>
         </div>
     );
 };

@@ -40,14 +40,14 @@ const App = () => {
 
   return (
     <div className="App">
-      {isPlaying ? (
-        <Game_Screen handleGameOver={handleGameOver} />
-      ) : showInstructions ? (
-        <Instructions handleBack={handleBack} />
-      ) : (
-        <MainMenu />
-      )}
-    </div>
+        {isPlaying ? (
+          <Game_Screen handleGameOver={handleGameOver} />
+        ) : showInstructions ? (
+          <Instructions handleBack={handleBack} />
+        ) : (
+          <MainMenu />
+        )}
+      </div>
   );
 }
 

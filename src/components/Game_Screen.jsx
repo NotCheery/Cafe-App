@@ -42,7 +42,7 @@ const Game_Screen = ({ handleGameOver }) => {
                     <button>Submit Order</button>
                 </div>
             </div>
-            <button onClick={handleGameOver}>Game Over</button>
+            <button onClick={handleGameOver} className="game-over-button">Game Over</button>
         </div>
     );
 };
