@@ -201,7 +201,7 @@ h2 {
 }
 
 /* Score display and order completion styling */
-/* .score-display {
+.score-display {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
@@ -228,4 +228,71 @@ button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
- */
+
+/* UI for make_order section */
+/* Make Order UI styling */
+.make-order {
+  background: rgba(43, 27, 71, 0.9); /* Darker, more opaque background */
+  padding: 30px;
+  border-radius: 16px;
+  border: 2px solid var(--cosmic-blue);
+  box-shadow: 0 0 25px rgba(79, 139, 255, 0.3);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Ingredient sections styling */
+.ingredient-section {
+  background: rgba(27, 39, 53, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Ingredient buttons styling */
+.ingredient-list button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: rgba(79, 139, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Required ingredients highlight */
+.ingredient-list button.required {
+  border: 2px solid gold;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  background: rgba(255, 215, 0, 0.1);
+}
+
+/* Drop zone styling */
+.drop-zone {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(79, 139, 255, 0.5);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  min-height: 150px;
+}
+
+.drop-zone.active {
+  border-color: var(--cosmic-blue);
+  background: rgba(79, 139, 255, 0.2);
+}
+
+/* Selected ingredients list */
+.selected-ingredients {
+  list-style: none;
+  padding: 0;
+}
+
+.selected-ingredients li {
+  background: rgba(79, 139, 255, 0.2);
+  margin: 5px 0;
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+

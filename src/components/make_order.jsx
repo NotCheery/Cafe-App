@@ -31,7 +31,6 @@ const MakeOrder = ({ onBack, updateOrder, requiredIngredients, currentIngredient
 
     return (
         <div className="make-order">
-            <h2>Make Order</h2>
             <div className="required-ingredients">
                 <h3>Required Ingredients</h3>
                 <ul>
