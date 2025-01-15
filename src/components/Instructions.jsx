@@ -5,10 +5,9 @@ const Instructions = ({handleBack}) => {
         <div className="instructions">
         <h2>Instructions</h2>
         <ul>
-            <li>You will receive an order</li>
-            <li>Prepare drinks accurately</li>
-            <li>Complete as many orders as you can</li>
-            <li>Earn points to meet the quota for the day!</li>
+            <li>You will receive orders</li>
+            <li>Prepare drinks accurately to receive points</li>
+            <li>That's all!</li>
         </ul>
         <button onClick={handleBack}>Back</button>
         </div>

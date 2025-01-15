@@ -1,17 +1,19 @@
+# Cafe App Game
 
+# Tech Stack: React, AWS Cognito
 
-Cafe App Game
+# App Demo:
+Demo: 
+Play here: 
 
-Tech Stack: React, AWS Cognito
+# How to Run in Visual Studio Code
+1. Download all the files from Github
+2. Open Visual Studio Code -> Open Cafe-App Folder 
+3. Open Terminal (Near topleft, three dots -> Terminal -> New Terminal)
+4. Type [cd "Pathway"] and enter without brackets
+5. Type and enter [npm run dev] without brackets
 
-Open Source and Free to Use: https://www.mysql.com/products/community/ 
+# Screenshots of the App!
 
-To Dos
-- Generate random Order and store order details using JSON and AWS service.
-- Score storage
-- Deploy the Game
-
-If Have More Time
-- Cafe theme styling (space, tech, cozy?)
-- Background sounds
-- Images
+![Menu](Cafe-App\public\cafe-app-menu.PNG)
+![Gameplay](Cafe-App\public\cafe-app-gameplay.PNG)

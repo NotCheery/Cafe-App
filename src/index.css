@@ -82,10 +82,10 @@ button:hover {
 }
 
 .back-make-order-button {
-  color: black;
+  background-color: rgb(75, 86, 189);
 }
 .game-over-button {
-  color: black;
+  background-color: rgb(75, 86, 189);
 }
 
 h1 {
@@ -261,11 +261,11 @@ button:disabled {
 }
 
 /* Required ingredients highlight */
-.ingredient-list button.required {
+/* .ingredient-list button.required {
   border: 2px solid gold;
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
   background: rgba(255, 215, 0, 0.1);
-}
+} */
 
 /* Drop zone styling */
 .drop-zone {
