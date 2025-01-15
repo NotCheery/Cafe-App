@@ -2,9 +2,8 @@
 
 # Tech Stack: React, AWS Cognito
 
-# App Demo:
-Demo: 
-Play here: 
+# Demo Video
+[!Demo](/Cafe-App/project_demo.gif)
 
 # How to Run in Visual Studio Code
 1. Download all the files from Github
