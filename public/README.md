@@ -15,5 +15,5 @@ Play here:
 
 # Screenshots of the App!
 
-![Menu](/Cafe-App/public/cafe-app-menu.PNG)
-![Gameplay](/Cafe-App/public/cafe-app-gameplay.PNG.PNG)
+![Menu](./Screenshots/cafe-app-menu.PNG)
+![Gameplay](./Screenshots/cafe-app-gameplay.PNG)
