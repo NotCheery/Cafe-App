@@ -15,5 +15,5 @@ Play here:
 
 # Screenshots of the App!
 
-![Menu](Cafe-App\public\cafe-app-menu.PNG)
+![Menu](C:\Users\tislam8\Documents\Projects!\Cafe-Game\Cafe-App\public\cafe-app-menu.PNG)
 ![Gameplay](Cafe-App\public\cafe-app-gameplay.PNG)
