@@ -14,6 +14,6 @@ Play here:
 5. Type and enter [npm run dev] without brackets
 
 # Screenshots of the App!
-
 ![Menu](./Screenshots/cafe-app-menu.PNG)
-![Gameplay](./Screenshots/cafe-app-gameplay.PNG)
+![GamePlay](./Screenshots/cafe-app-gameplay.PNG)
+
